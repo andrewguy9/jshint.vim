@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 var jshint = require('jshint').JSHINT;
-var puts = require('util').puts;
+// var puts = require('util').puts;
+var puts = console.log;
 var stdin = process.openStdin();
 var fs = require('fs');
 var jshintrc = process.argv[2] ? fs.readFileSync(process.argv[2], 'utf8') : '';
